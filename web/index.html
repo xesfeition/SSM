@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery1/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        function all(){
+            $.getJSON("all",function (data) {
+                $("#dv").html(data[0].id);
+            })
+        }
+        $(function () {
+            all();
+        })
+    </script>
+</head>
+<body>
+    <div id="dv">
+
+    </div>
+</body>
+</html>
